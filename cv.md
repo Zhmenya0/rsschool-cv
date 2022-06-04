@@ -14,13 +14,17 @@ I want to change my occupation.  Now I work as an electrician in a hotel on the 
 * Git
 ***
 ## **Code Example**
+
 ```
+
 const multiply = (a,b) => a * b
 
 const result = multiply(7,5)
 
 console.log(result)
+
 ``` 
+
 ***
 ## **Education**
 * **College:** Gomel City Vocational College of Electrical Engineering
