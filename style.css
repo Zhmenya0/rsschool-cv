@@ -1,5 +1,9 @@
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'Roboto', sans-serif;
+
 body {
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: grey;
+    margin: 0;
+    width: 1440px;
 }
