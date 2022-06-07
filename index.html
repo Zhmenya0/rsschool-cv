@@ -4,9 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,700&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>CV</title>
 </head>
 <body>
-    Hello world!
+    <header class="header">
+        <div class="avatar">
+            <img src="./img/Avatar.jpg" alt="avatar">
+        </div>
+        <div class="header_content">
+            <div class="header_title"><h1><span>Abramov</span> Yauheni</h1></div>
+            <div class="header_subtitle">Junior Frontend Developer</div>
+            <ul class="header_contacts">
+                <li class="header_contacts_item"><h3>Location</h3><p>Israel, Eilat</p></li>
+                <li class="header_contacts_item"><h3>Phone number</h3><p>+972 55 237 93 71</p></li>
+                <li class="header_contacts_item"><h3>Email</h3><a class="email" href="mailto:Zhmenya0@gmail.com">Zhmenya0@gmail.com</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="about_me">
+            <div class="about_me_title"><p>About me</p></div>
+            <div class="about_me_subtitle"><p>I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new skills. I am reliable and dependable and often seek new responsibilities within a wide range of employment areas.</p></div>
+        </section>
+        <div class="skills">
+            <div class="skills_title"><h2>Skills</h2><p>In progress</p></div>
+            <div class="skills_graphic">
+                <ul class="graphic_list">
+                    <li class="graphic_item">
+                        <h3 class="graphic_item_title">HTML</h3>
+                        <span class="graphic_item_percent">80%</span>
+                        <div class="graphic_item_line">
+                            <div class="graphic_line_percent width-80"></div>
+                        </div>
+                    </li>
+                    <li class="graphic_item">
+                        <h3 class="graphic_item_title">CSS</h3>
+                        <span class="graphic_item_percent">50%</span>
+                        <div class="graphic_item_line">
+                            <div class="graphic_line_percent width-50"></div>
+                        </div>
+                    </li>
+                    <li class="graphic_item">
+                        <h3 class="graphic_item_title">JAVASCRIPT</h3>
+                        <span class="graphic_item_percent">10%</span>
+                        <div class="graphic_item_line">
+                            <div class="graphic_line_percent width-10"></div>
+                        </div>
+                    </li>
+                    <li class="graphic_item">
+                        <h3 class="graphic_item_title">GIT</h3>
+                        <span class="graphic_item_percent">60%</span>
+                        <div class="graphic_item_line">
+                            <div class="graphic_line_percent width-60"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="code_example">
+            <div class="code_example_title">
+                <h2>Code example</h2>
+                <p>From random code</p>
+            </div>
+            <div class="code_example_subtitle">
+                <div class="code_random_example">
+                    <div class="code_random_example_bg">
+                        <code>
+                            "`export const cd = async ([path]) => {<br>
+                                if (!path) {<br>
+                                  return Promise.reject('Please write path uri!');<br>
+                                }<br>
+                              
+                                try {<br>
+                                  if (path.indexOf(env.dirname) === 0) {<br>
+                                    const isFolder = await lstat(process.__dirname + '/' + path);<br>
+                                    if (!isFolder.isDirectory()) {<br>
+                                      throw null;<br>
+                                    }<br>
+                                    env.dirname = path;<br>
+                                  } else {<br>
+                                    const isFolder = await lstat(process.__dirname + '/' + env.dirname + '/' + path);<br>
+                                    if (!isFolder.isDirectory()) {<br>
+                                      throw null;<br>
+                                    }<br>
+                                    env.dirname += '/' + path;<br>
+                                  }<br>
+                                } catch (e) {<br>
+                                  return Promise.reject(`cd: no such directory: ${path}`);<br>
+                                }<br>
+                              }`"<br>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="education">
+            <div class="education_title">
+                <h2>Education</h2>
+            </div>
+            <div class="education_subtitle">
+                <div class="education_subtitle_college">College:</div>
+                <div class="education_subtitle_name">Gomel City Vocational College of Electrical Engineering</div>
+            </div>
+        </section>
+        <div class="english">
+            <div class="english_title">
+                <h2>English</h2>
+                <p>A1</p>
+            </div>
+            <div class="english_subtitle">
+                <p>I plan to improve my level of English, but now there is no time.  I will do it after kouros in “rsschool”</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav class="nav_contacts">
+            <ul class="contacts">
+                <li class="contacts_vk">
+                  <a href="https://www.vk.com/Zhmenya1">
+                      <img src="./img/vk.svg" alt="vk">
+                  </a> 
+                </li>
+                <li class="contacts_fb">
+                    <a href="https://www.facebook.com/profile.php?id=100001566074952">
+                        <img src="./img/fb.svg" alt="fb">
+                    </a>
+                </li>
+                <li class="contacts_rs">
+                    <a href="https://rs.school/js-stage0/">
+                        <img src="./img/rs_school.svg" alt="rsschool">
+                    </a>
+                </li>
+                <li class="contacts_inst">
+                    <a href="https://www.instagram.com/Zhmenya0">
+                        <img src="./img/instagram-seeklogo.com.svg" alt="instagram">
+                    </a>
+                </li>
+                <li class="contacts_git">
+                    <a href="https://github.com/Zhmenya0">
+                        <img src="./img/git-square.svg" alt="GitHub">
+                    </a>
+                    
+                </li>
+            </ul>
+        </nav>
+        <div class="footer_subtitle">Abramov Evgeni 2022</div>
+    </footer>
 </body>
 </html>
