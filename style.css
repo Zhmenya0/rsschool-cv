@@ -235,7 +235,7 @@ p {
 
 .education_title {
     width: 30%;
-    background-color: #2b2c2c;
+    background-color: #2d2e2e;
     text-align: right;
 }
 
@@ -248,7 +248,7 @@ p {
 
 .education_subtitle {
     width: 70%;
-    background-color: #2d2e2e;
+    background-color: #2b2c2c;
 }
 
 .education_subtitle_college {
@@ -270,7 +270,7 @@ p {
 
 .english_title {
     width: 30%;
-    background-color: #2d2e2e;
+    background-color: #2b2c2c;
     text-align: right;
 }
 
@@ -288,7 +288,7 @@ p {
 
 .english_subtitle {
     width: 70%;
-    background-color: #2b2c2c;
+    background-color: #2d2e2e;
 }
 
 .english_subtitle>p {
@@ -334,3 +334,34 @@ p {
     margin: 0 0 20px 0;
 }
 
+.my_project {
+    display: flex;
+}
+
+.my_project_title {
+    background-color: #2b2c2c;
+    width: 30%;
+}
+
+.my_project_title>h2 {
+    margin: 25px 25px 0 0;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: right;
+}
+
+.my_project_subtitle {
+    background-color: #2d2e2e;
+    width: 70%;
+}
+
+.my_project_subtitle>a>p {
+    font-size: 21px;
+    margin: 27px 25px;
+    justify-content: space-between;
+}
+
+.my_project_subtitle>a>p:hover {
+    transform: scale(1.008);
+    transition: 0.2s;
+}
